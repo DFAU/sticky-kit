@@ -63,7 +63,7 @@
         height = elm.outerHeight(true);
         el_float = elm.css("float");
         spacer.css({
-          width: elm.outerWidth(true),
+          width: elm.outerWidth(true) - 1,
           height: height,
           display: elm.css("display"),
           "vertical-align": elm.css("vertical-align"),
