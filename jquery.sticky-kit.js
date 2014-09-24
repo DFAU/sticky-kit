@@ -75,7 +75,7 @@
       };
       recalc();
       if (height === parent_height) {
-        return;
+        // return;
       }
       last_pos = void 0;
       offset = offset_top;
