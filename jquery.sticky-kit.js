@@ -58,12 +58,12 @@
           top: "",
           width: "",
           bottom: ""
-        }), spacer.detach(), true) : void 0;
+        }).removeClass(sticky_class), spacer.detach(), true) : void 0;
         top = elm.offset().top - parseInt(elm.css("margin-top"), 10) - offset_top;
         height = elm.outerHeight(true);
         el_float = elm.css("float");
         spacer.css({
-          width: elm.outerWidth(true),
+          width: elm.outerWidth(true) - 1,
           height: height,
           display: elm.css("display"),
           "vertical-align": elm.css("vertical-align"),
@@ -75,7 +75,7 @@
       };
       recalc();
       if (height === parent_height) {
-        return;
+        // return;
       }
       last_pos = void 0;
       offset = offset_top;
